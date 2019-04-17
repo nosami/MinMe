@@ -59,6 +59,9 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.Mac" />
+    <Reference Include="MinMe.Core">
+      <HintPath>bin\Debug\MinMe.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
@@ -111,12 +114,6 @@
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Main.storyboard" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MinMe.Core\MinMe.Core.fsproj">
-      <Project>{DA0EC6D1-CB81-47F0-9350-775BB1C4E1AD}</Project>
-      <Name>MinMe.Core</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />
   <Choose>
